@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView scorecount;
+    TextView ta,tb;
     Button btn1,btn2,btn3,btn4;
 
     @Override
@@ -16,34 +16,52 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        scorecount =findViewById(R.id.scorecount);
-        btn1 = (Button)findViewById(R.id.button);
-        btn2 = (Button)findViewById(R.id.button2);
-        btn3 = (Button)findViewById(R.id.button3);
-        btn4 = (Button)findViewById(R.id.button4);
+        ta = findViewById(R.id.textView);
+        tb = findViewById(R.id.textView4);
+//        btn1 = (Button)findViewById(R.id.button);
+//        btn2 = (Button)findViewById(R.id.button2);
+//        btn3 = (Button)findViewById(R.id.button3);
+//        btn4 = (Button)findViewById(R.id.button4);
     }
 
     public void btn1(View view) {
-        String sc = scorecount.getText().toString();
+        String sc = ta.getText().toString();
         int score = Integer.parseInt(sc)+3;
-        scorecount.setText(String.valueOf(score));
+        ta.setText(String.valueOf(score));
     }
 
     public void btn2(View view) {
-        String sc = scorecount.getText().toString();
+        String sc = ta.getText().toString();
         int score = Integer.parseInt(sc)+2;
-        scorecount.setText(String.valueOf(score));
+        ta.setText(String.valueOf(score));
     }
 
     public void btn3(View view) {
-        String sc = scorecount.getText().toString();
+        String sc = ta.getText().toString();
         int score = Integer.parseInt(sc)+1;
-        scorecount.setText(String.valueOf(score));
+        ta.setText(String.valueOf(score));
     }
 
     public void btn4(View view) {
-        String sc = scorecount.getText().toString();
-        int score = Integer.parseInt(sc);
-        scorecount.setText("0");
+        ta.setText("0");
+        tb.setText("0");
+    }
+
+    public void btn5(View view) {
+        String sc = tb.getText().toString();
+        int score = Integer.parseInt(sc)+3;
+        tb.setText(String.valueOf(score));
+    }
+
+    public void btn6(View view) {
+        String sc = tb.getText().toString();
+        int score = Integer.parseInt(sc)+2;
+        tb.setText(String.valueOf(score));
+    }
+
+    public void btn7(View view) {
+        String sc = tb.getText().toString();
+        int score = Integer.parseInt(sc)+1;
+        tb.setText(String.valueOf(score));
     }
 }

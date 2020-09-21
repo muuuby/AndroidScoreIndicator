@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">ScoreIndicator</string>
-    <string name="teamname">Team A score:</string>
     <string name="title">Score Indicator</string>
     <string name="score">0</string>
-    <string name="btn1">+3 score</string>
-    <string name="btn2">+2 score</string>
-    <string name="btn3">+1 score</string>
+    <string name="btn1">+3 points</string>
+    <string name="btn2">+2 points</string>
+    <string name="btn3">free throw</string>
     <string name="btn4">reset</string>
+    <string name="team1">Team A</string>
+    <string name="team2">Team B</string>
 </resources>
