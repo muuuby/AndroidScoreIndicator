@@ -1,4 +1,3 @@
 《计分器项目》
 
-作者：姜国辉
-学号：41710086
+This is a conunting app in Android
